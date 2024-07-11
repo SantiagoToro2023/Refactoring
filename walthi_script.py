@@ -1,4 +1,4 @@
-import sql_library
+from sql_library import *
 
 # -------------------------------------------
 # ++++++++++++ Main Main Main +++++++++++++++
