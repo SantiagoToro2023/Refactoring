@@ -417,8 +417,8 @@ def unload_all_data_from_schema(db_connection,
 # ++++++++++++ Main Main Main +++++++++++++++
 # -------------------------------------------
 if __name__ == '__main__':
-    schema_name = 'sakila'
-    db_connection = do_db_connect(user='root', password='1234')
+    schema_name = input('Schema: ')
+    db_connection = do_db_connect(user=input('Username: '), password=input('Password: '))
 
     if False:
         insert_string = unload_data_from_db_table(
