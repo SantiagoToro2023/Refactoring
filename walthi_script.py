@@ -1,4 +1,3 @@
-Zum Hauptinhalt
 # ------------------------------------------------------------------
 # Name: 03_DB_Access.py
 # Source: https://raw.githubusercontent.com/walter-rothlin/Source-Code/master/Python_WaltisExamples/_BZU/2024/TI23_BLf/03_DB_Access.py
@@ -14,10 +13,6 @@ Zum Hauptinhalt
 # ------------------------------------------------------------------
 #
 # from waltisLibrary import *
-#
-#
-#
-# 11.07.2024    Santiago Toro       Refactoring in Gruppe
 
 import datetime
 import re
@@ -423,7 +418,7 @@ def unload_all_data_from_schema(db_connection,
 # -------------------------------------------
 if __name__ == '__main__':
     schema_name = 'sakila'
-    db_connection = do_db_connect(user='TI23_B', password='TI23_B')
+    db_connection = do_db_connect(user='root', password='1234')
 
     if False:
         insert_string = unload_data_from_db_table(
@@ -483,4 +478,3 @@ if __name__ == '__main__':
     if len(sakila_tables_to_read_with_exceptions) > 0:
         file_name = addTimestampToFileName(f'{schema_name}_Extract_With_Exceptions.sql')
     File_create(file_name, insert_string, verbal=True)
-Zuletzt geändert: Donnerstag, 11. Juli 2024, 07:53
